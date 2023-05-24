@@ -1,12 +1,18 @@
 import './App.css';
+import { Layout } from 'antd';
+import Header from './layout/Header';
+import Main from './layout/Main'
+import Footer from './layout/Footer';
 
 function App() {
   return (
-    <div className="App">
-        <h1 class="text-3xl p-5 hover:underline">
-    Hello world!
-  </h1>
-    </div>
+    <>
+    <Layout>
+      <Header />
+      <Main />
+      <Footer />
+    </Layout>
+    </>
   );
 }
 
